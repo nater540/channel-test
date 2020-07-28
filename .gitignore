@@ -1,0 +1,6 @@
+.DS_Store
+
+/target
+
+/rabbitmq/*
+!rabbitmq/logs/.keep

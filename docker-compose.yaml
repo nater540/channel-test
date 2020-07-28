@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  rabbitmq:
+    image: rabbitmq:3.8.5-management-alpine
+    ports:
+      - 5672:5672
+      - 15672:15672
+    environment:
+      - RABBITMQ_DEFAULT_USER=fluffy
+      - RABBITMQ_DEFAULT_PASS=bunny
+    volumes:
+      - ./rabbitmq/logs:/var/log/rabbitmq/log
